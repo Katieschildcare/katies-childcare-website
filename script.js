@@ -1,5 +1,5 @@
 // Bumped by tools/bump-version.ps1 on every update so browsers fetch fresh pictures.
-const ASSET_VERSION = "202611271411";
+const ASSET_VERSION = "202611271426";
 const v = (path) => `${path}?v=${ASSET_VERSION}`;
 
 // The contact form opens the visitor's email app with their message addressed here.
@@ -31,8 +31,8 @@ const GALLERY_AREAS = [
   { id: "sensory", label: "Sensory & soft play" },
 ];
 const GALLERY = [
-  { area: "sensory", src: "assets/gallery/sensory-attic.jpg",       caption: "Sensory and movement attic", alt: "Attic playroom with a small trampoline, spinning seats, a rocker, a light box and a hanging sensory swing" },
   { area: "outside", src: "assets/gallery/out-garden.jpg",          caption: "Our garden", alt: "Wide view of the nursery garden with artificial grass, a climbing frame, slides and ride-on toys in front of the barn" },
+  { area: "sensory", src: "assets/gallery/sensory-attic.jpg",       caption: "Sensory and movement attic", alt: "Attic playroom with a small trampoline, spinning seats, a rocker, a light box and a hanging sensory swing" },
   { area: "baby",    src: "assets/gallery/baby-den.jpg",            caption: "Cosy den", alt: "Soft den in the baby room with a grey canopy, cushions, a rug and a bookshelf" },
   { area: "big",     src: "assets/gallery/big-home-corner.jpg",     caption: "Home corner", alt: "Play kitchen with a toy oven, microwave, telephone and a table set with play food" },
   { area: "outside", src: "assets/gallery/out-gazebo.jpg",          caption: "The gazebo", alt: "Large wooden gazebo with a slate roof and picket fence beside the garden" },
