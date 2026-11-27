@@ -1,3 +1,7 @@
+// Bumped by tools/bump-version.ps1 on every update so browsers fetch fresh pictures.
+const ASSET_VERSION = "202611270740";
+const v = (path) => `${path}?v=${ASSET_VERSION}`;
+
 // The contact form opens the visitor's email app with their message addressed here.
 const CONTACT_EMAIL = "katieschildcare1977@gmail.com";
 
@@ -51,8 +55,8 @@ TEAM.forEach((p, i) => {
   li.style.setProperty("--d", (i % 4) * 0.05 + "s");
   li.innerHTML = `
     <div class="member-photo">
-      <img src="assets/team/${p.img}.jpg" alt="Cartoon portrait of ${name}" width="640" height="854" loading="lazy">
-      <img class="real" src="assets/team-real/${p.img}.jpg" alt="Photo of ${name}" width="600" height="800" loading="lazy">
+      <img src="${v(`assets/team/${p.img}.jpg`)}" alt="Cartoon portrait of ${name}" width="640" height="854" loading="lazy">
+      <img class="real" src="${v(`assets/team-real/${p.img}.jpg`)}" alt="Photo of ${name}" width="600" height="800" loading="lazy">
       <button class="photo-toggle" type="button" aria-pressed="false" aria-label="Show real photo of ${name}">${camera}</button>
     </div>
     <div class="member-body">
@@ -80,7 +84,7 @@ tiles.forEach((g, i) => {
   li.style.setProperty("--d", (i % 4) * 0.05 + "s");
   li.innerHTML = g
     ? `<button class="tile" type="button" data-i="${i}" aria-label="View larger: ${esc(g.caption)}">
-         <img src="${esc(g.src)}" alt="${esc(g.alt)}" loading="lazy">
+         <img src="${esc(v(g.src))}" alt="${esc(g.alt)}" loading="lazy">
          <span class="tile-cap" aria-hidden="true">${esc(g.caption)}</span>
        </button>`
     : `<div class="placeholder">${photoIcon}<span>[Nursery photo]</span></div>`;
@@ -95,7 +99,7 @@ let lbIndex = 0, lbOpener = null;
 function showPhoto(i) {
   lbIndex = (i + GALLERY.length) % GALLERY.length;
   const g = GALLERY[lbIndex];
-  lbImg.src = g.src; lbImg.alt = g.alt;
+  lbImg.src = v(g.src); lbImg.alt = g.alt;
   lbCap.textContent = `${g.caption} · ${lbIndex + 1} of ${GALLERY.length}`;
 }
 gallery.addEventListener("click", (e) => {

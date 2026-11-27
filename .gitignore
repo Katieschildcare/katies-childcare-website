@@ -13,3 +13,6 @@ Thumbs.db
 
 # upload package for Hostinger
 *.zip
+
+# local helper scripts (not part of the website)
+tools/
