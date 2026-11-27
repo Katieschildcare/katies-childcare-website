@@ -141,6 +141,9 @@ em { font-family: var(--font-serif); font-style: italic; font-weight: 400; lette
   line-height: .95; letter-spacing: -.035em; font-weight: 600;
 }
 .display em { color: var(--pink-strong); letter-spacing: -.02em; }
+/* The hero's eyebrow line is part of the h1 so search engines read the location with the headline */
+.hero-h1 { font-weight: inherit; letter-spacing: normal; line-height: inherit; }
+.hero-h1 .display { display: block; font-family: var(--font-display); }
 .lead { max-width: 34em; font-size: clamp(1.1rem, 1.6vw, 1.3rem); color: var(--ink-2); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 
