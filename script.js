@@ -1,5 +1,5 @@
 // Bumped by tools/bump-version.ps1 on every update so browsers fetch fresh pictures.
-const ASSET_VERSION = "202611270740";
+const ASSET_VERSION = "202611270743";
 const v = (path) => `${path}?v=${ASSET_VERSION}`;
 
 // The contact form opens the visitor's email app with their message addressed here.
