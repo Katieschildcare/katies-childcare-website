@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.katieschildcare.co.uk/sitemap.xml

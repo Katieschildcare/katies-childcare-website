@@ -1,0 +1,4 @@
+# One web address for the whole site: send katieschildcare.co.uk (and any http://) to https://www.katieschildcare.co.uk
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^katieschildcare\.co\.uk$ [NC]
+RewriteRule ^(.*)$ https://www.katieschildcare.co.uk/$1 [L,R=301]
