@@ -1,0 +1,12 @@
+# Only the website itself goes to GitHub / Hostinger.
+# Originals and working files stay on this computer.
+Photos/
+Videos/
+Logo/
+*.docx
+~$*
+.claude/
+
+# Windows / OneDrive clutter
+desktop.ini
+Thumbs.db
