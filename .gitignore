@@ -10,3 +10,6 @@ Logo/
 # Windows / OneDrive clutter
 desktop.ini
 Thumbs.db
+
+# upload package for Hostinger
+*.zip
