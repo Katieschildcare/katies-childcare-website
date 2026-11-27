@@ -151,17 +151,17 @@ em { font-family: var(--font-serif); font-style: italic; font-weight: 400; lette
 .bubble-card {
   position: relative; z-index: 2; width: min(420px, 100%);
   padding: 28px 30px 30px; text-align: center;
-  background: var(--orange); border: 2.5px solid var(--line); border-radius: 22px;
+  background: var(--pink-strong); color: #fff; border: 2.5px solid var(--line); border-radius: 22px;
   box-shadow: var(--shadow-clay); transform: rotate(-3deg);
 }
 .bubble-card::after {
   content: ""; position: absolute; left: 50%; bottom: -14px; width: 24px; height: 24px;
-  background: var(--orange); border-right: 2.5px solid var(--line); border-bottom: 2.5px solid var(--line);
+  background: var(--pink-strong); border-right: 2.5px solid var(--line); border-bottom: 2.5px solid var(--line);
   transform: translateX(-50%) rotate(45deg);
 }
 .bubble-title { font: 600 clamp(1.5rem, 2.6vw, 2rem)/1.05 var(--font-display); letter-spacing: -.02em; }
 .bubble-script { margin-top: 6px; font: italic 400 clamp(1.5rem, 2.6vw, 2.05rem)/1.05 var(--font-serif); }
-.sparkle { position: absolute; left: -16px; top: -16px; width: 34px; height: 34px; fill: var(--pink); }
+.sparkle { position: absolute; left: -16px; top: -16px; width: 34px; height: 34px; fill: var(--orange); }
 .mascot {
   position: relative; z-index: 1; width: min(300px, 72%); aspect-ratio: 1;
   border-radius: 50%; overflow: hidden; margin-top: -6px;
